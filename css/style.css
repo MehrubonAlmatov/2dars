@@ -1,0 +1,191 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  max-width: 1480px;
+  height: 1024px;
+  background: url('/img/75ae05112787439\ 1.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 20px;
+}
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav i {
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+.hero {
+  max-width: 667px;
+  height: 220px;
+}
+
+.hero h1 {
+  max-width: 667px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.about,
+.drivers {
+  padding: 20px;
+  text-align: center;
+  .p {
+    max-width: 960px;
+  }
+}
+
+.about h2,
+.drivers h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.driver-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.soat {
+  color: #007bff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-content .contact,
+.footer-content .form {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer form input,
+footer form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+footer form button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .driver-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero button {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 475px) {
+  nav ul {
+    display: none;
+  }
+  nav i {
+    display: block;
+  }
+}
